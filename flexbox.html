@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+      <title>Flexbox</title>
+
+      <meta charset="UTF-8">
+
+      <!-- include W3 CSS framework -->
+      <!-- <link rel="stylesheet" src="./css/w3.css"> -->
+
+      <style>
+
+        html, body {
+          height: 100%;
+        }
+
+        body {
+          background-color: red;
+          font-family: verdana;
+          font-size: 0.7em;
+          color: red;
+          padding: 0;
+          margin: 0;
+        }
+
+        #box_container {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          /* ^-- values: column , row */
+          justify-content: center;
+          /* ^--- values: center , flex-start , flex-end , space-between , space-around , space-evenly */
+          /* width: 600px; */
+          /* height: 600px; */
+          background-color: white;
+          height: 100%;
+        }
+
+        #box_1, #box_2, #box_3, #box_4 {
+          display: inherit;
+          flex-wrap: nowrap;
+          justify-content: inherit;
+          align-content: center;
+        }
+
+        #box_1 {
+          width: 50%;
+          height: 50%;
+          background-color: #000000;
+        }
+
+        #box_2 {
+          width: 50%;
+          height: 50%;
+          background-color: #333333;
+        }
+
+        #box_3 {
+          width: 50%;
+          height: 50%;
+          background-color: #666666;
+        }
+
+        #box_4 {
+          width: 50%;
+          height: 50%;
+          background-color: #999999;
+        }
+
+        .ul_frame {
+          display: inherit;
+          justify-content: center;
+          width: 50%;
+          height: 100%;
+          background-color: white;
+        }
+
+        .list {
+          display: inherit;
+          flex-direction: column;
+          flex-wrap: wrap;
+          justify-content: center;
+          width: auto;
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          background: white;
+        }
+
+        .list li {
+          line-height: 1.7em;
+        }
+
+      </style>
+
+  </head>
+
+  <body>
+
+    <div id="box_container">
+      <div id="box_1">
+        <div class="ul_frame">
+          <ul class="list">
+            <li>Item One</li>
+            <li>Item Two</li>
+            <li>Item Three</li>
+            <li>Item Four</li>
+            <li>Item Five</li>
+            <li>Item Six</li>
+          </ul>
+        </div>
+      </div>
+      <div id="box_2">
+        <div class="ul_frame">
+          <ul class="list">
+            <li>Item One</li>
+            <li>Item Two</li>
+            <li>Item Three</li>
+            <li>Item Four</li>
+            <li>Item Five</li>
+            <li>Item Six</li>
+          </ul>
+        </div>
+      </div>
+      <div id="box_3">
+        <div class="ul_frame">
+          <ul class="list">
+            <li>Item One</li>
+            <li>Item Two</li>
+            <li>Item Three</li>
+            <li>Item Four</li>
+            <li>Item Five</li>
+            <li>Item Six</li>
+          </ul>
+        </div>
+      </div>
+      <div id="box_4">
+        <div class="ul_frame">
+          <ul class="list">
+            <li>Item One</li>
+            <li>Item Two</li>
+            <li>Item Three</li>
+            <li>Item Four</li>
+            <li>Item Five</li>
+            <li>Item Six</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </body>
+
+</html>
